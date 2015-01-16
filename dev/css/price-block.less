@@ -1,0 +1,92 @@
+/* -------= variables =------- */
+//@price-block-min-height: 400px;
+//@price-block-max-height: 9999px;
+/* -------= variables =------- */
+
+/* -------= imports =------- */
+@import "variables";
+@import "fonts";
+/* -------= imports =------- */
+
+/* -------= price-block =------- */
+.price-block__background {
+	background: url("../../static/img/backs2/2nd-bg.jpg");
+	background-attachment: fixed;
+	background-repeat: /*no-repeat*/ repeat-y;
+	background-position: 100% 0;
+	position: relative;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    min-height: @price-block-min-height;
+    max-height: @price-block-max-height;
+    z-index: -10;
+}
+.price-block__margintop {
+    margin-top: 40px;
+}
+.price-block__margintop-xs {
+    margin-top: 20px;
+}
+
+.price-block__main-price {
+    font-size: 120px;
+    padding: 0;
+}
+.price-block__rouble-fontsize {
+    font-size: 74px;
+}
+
+.price-block__text-background {
+   z-index: 100;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity:0.95;
+    filter:alpha(opacity=95);
+    -moz-opacity:0.95;
+    background-color: @header-block-text-background-color1;
+    height:100%;
+}
+.price-block__main-text {
+    color: @header-block-text-color;
+    text-align: center;
+    .opensans-condbold;
+    font-size: 28px;
+    z-index: 1;
+
+    h1 {
+        padding: 0;
+        margin: 0;
+    }
+}
+.price-block__main-price-xs {
+    font-size: 40px;
+}
+.price-block__rouble-fontsize-xs {
+    font-size: 30px;
+}
+/* -------= price-block =------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

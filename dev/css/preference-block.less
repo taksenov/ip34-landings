@@ -1,0 +1,175 @@
+/* -------= variables =------- */
+//@header-block-text-color: #d5dbe7;
+//@header-block-text-background-color1: #01518e;
+//@header-block-text-background-color2: #54639e;
+//@details-block-text-color: #151515;
+/* -------= variables =------- */
+
+/* -------= imports =------- */
+@import "mixins";
+@import "variables";
+@import "fonts";
+/* -------= imports =------- */
+
+/* -------= preference-block =------- */
+.preference-block__section {
+	background-color: #d5dbe7;
+}
+
+.light-icon {
+    height: 128px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    .inlineblock;
+    padding: 0;
+    border: 0 none;
+    text-decoration: none;
+    .transition(0.2s);
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+
+    &:before {
+        content: "";
+        width: 128px;
+        height: 128px;
+        .inlineblock;
+        background: url("../../static/img/preference-block/light-1.png") center center no-repeat;
+    }
+}
+.simple-icon {
+    height: 128px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    .inlineblock;
+    padding: 0;
+    border: 0 none;
+    text-decoration: none;
+    .transition(0.2s);
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+
+    &:before {
+        content: "";
+        width: 128px;
+        height: 128px;
+        .inlineblock;
+        background: url("../../static/img/preference-block/simple-1.png") center center no-repeat;
+    }
+}
+.comfortable-icon {
+    height: 128px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    .inlineblock;
+    padding: 0;
+    border: 0 none;
+    text-decoration: none;
+    .transition(0.2s);
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+
+    &:before {
+        content: "";
+        width: 128px;
+        height: 128px;
+        .inlineblock;
+        background: url("../../static/img/preference-block/udob-1.png") center center no-repeat;
+    }
+}
+
+.service-light,
+.service-simple,
+.service-comfortable {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 5px solid transparent;
+}
+
+.service-light:hover {
+
+            background-color: #d5dbe7;
+            border-bottom: 5px solid @header-block-text-background-color2;
+
+            .light-icon:before {
+                content: "";
+                width: 128px;
+                height: 128px;
+                .inlineblock;
+                background: url("../../static/img/preference-block/light-2.png") center center no-repeat;
+                text-decoration: none;
+            }
+
+}
+.service-simple:hover {
+
+            background-color: #d5dbe7;
+            border-bottom: 5px solid @header-block-text-background-color2;
+
+            .simple-icon:before {
+                content: "";
+                width: 128px;
+                height: 128px;
+                .inlineblock;
+                background: url("../../static/img/preference-block/simple-2.png") center center no-repeat;
+                text-decoration: none;
+            }
+
+}
+.service-comfortable:hover {
+
+            background-color: #d5dbe7;
+            border-bottom: 5px solid @header-block-text-background-color2;
+
+            .comfortable-icon:before {
+                content: "";
+                width: 128px;
+                height: 128px;
+                .inlineblock;
+                background: url("../../static/img/preference-block/udob-2.png") center center no-repeat;
+                text-decoration: none;
+            }
+
+}
+
+.preference-block__margintop {
+    margin-top: 30px;
+}
+.preference-block__marginbottom {
+    margin-bottom: 30px;
+}
+.preference-block__text {
+	.opensans-regular;
+	color: @details-block-text-color;
+    font-size: 20px;
+}
+/* -------= preference-block =------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

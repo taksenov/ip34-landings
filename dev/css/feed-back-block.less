@@ -1,0 +1,111 @@
+/* -------= variables =------- */
+//@header-block-text-color: #d5dbe7;
+//@header-block-text-background-color1: #01518e;
+//@header-block-text-background-color2: #54639e;
+
+/* -------= variables =------- */
+
+/* -------= imports =------- */
+@import "mixins";
+@import "fonts";
+@import "button";
+@import "variables";
+/* -------= imports =------- */
+
+/* -------= feed-back-block =------- */
+.feedback-block__background {
+	background: url("../../static/img/backs2/3rd-bg.jpg");
+	//background-attachment: fixed;
+	//background-origin: initial;
+	//background-clip: initial;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	position: relative;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    min-height: @feedback-block-min-height;
+    max-height: @feedback-block-max-height;
+    z-index: 0;
+}
+
+.form-horizontal.feedback-block__posabs {
+    margin-top: 100px;
+    background-color: @header-block-text-color;
+    color: @header-block-text-background-color1;
+}
+.form-horizontal > .header-block__main-text {
+    color: @header-block-text-background-color1;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.feedback-block__submit-button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+        .btn {
+            border-radius: 0;
+        }
+}
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+.feedback-block__offer-button {
+    /*
+    @width: 68px,              = ширина
+    @height: 28px,             = высота
+    @img: none,                = картинка иконки
+    @bradius: 3px,             = радиус уголков
+    @bg-color: #17709a,        = цвет фона
+    @hover-bg-color: #17709a,  = цвет фона при ховере
+    @font-color: #ffffff       = цвет шрифта
+    @font-size: 12px           = размер шрифта
+     */
+    text-transform: uppercase;
+    //margin-bottom: 30px;
+    color: #d5dbe7;
+    .opensans-condbold;
+    .original-button (
+        207px,
+        42px,
+        none,
+        none,
+        #01518e,
+        #54639e,
+        #d5dbe7,
+        18px
+    );
+}
+@media screen and (min-width: 1201px) {
+    .form-horizontal.feedback-block__posabs {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .form-horizontal.feedback-block__posabs {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 993px) {
+    .form-horizontal.feedback-block__posabs {
+        margin-top: 60px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .form-horizontal.feedback-block__posabs {
+        margin-top: 35px;
+    }
+}
+/* -------= feed-back-block =------- */
+
+
+
+
+
+

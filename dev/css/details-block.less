@@ -1,0 +1,94 @@
+/* -------= variables =------- */
+//@header-block-text-color: #d5dbe7;
+//@header-block-text-background-color1: #01518e;
+//@header-block-text-background-color2: #54639e;
+
+/* -------= variables =------- */
+
+/* -------= imports =------- */
+//@import "main";
+@import "mixins";
+@import "fonts";
+@import "button";
+@import "variables";
+/* -------= imports =------- */
+
+/* -------= details-block =------- */
+.details-block {
+	background-color: #d5dbe7;
+
+	p {
+		.opensans-regular;
+	}
+}
+.details-block__header-text {
+	.opensans-regular;
+	color: @header-block-text-background-color1;
+	font-size: 38px;
+}
+.details-block__header-text-xs {
+	.opensans-regular;
+	color: @header-block-text-background-color1;
+	font-size: 28px;
+}
+.details-block__text {
+	.opensans-regular;
+	color: @details-block-text-color;
+	font-size: 34px;
+}
+.details-block__text-xs {
+	.opensans-regular;
+	color: @details-block-text-color;
+	font-size: 24px;
+}
+.details-block__offer-button {
+    /*
+    @width: 68px,              = ширина
+    @height: 28px,             = высота
+    @img: none,                = картинка иконки
+    @bradius: 3px,             = радиус уголков
+    @bg-color: #17709a,        = цвет фона
+    @hover-bg-color: #17709a,  = цвет фона при ховере
+    @font-color: #ffffff       = цвет шрифта
+    @font-size: 12px           = размер шрифта
+     */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    .opensans-condbold;
+    .original-button (
+        247px,
+        42px,
+        none,
+        none,
+        #01518e,
+        #54639e,
+        #d5dbe7,
+        18px
+    );
+}
+/* -------= details-block =------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

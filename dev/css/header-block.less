@@ -1,0 +1,315 @@
+/* -------= variables =------- */
+
+/* -------= variables =------- */
+
+/* -------= imports =------- */
+@import "mixins";
+@import "fonts";
+@import "button";
+@import "variables";
+/* -------= imports =------- */
+
+/* -------= header-block =------- */
+.header-block__margintop {
+    margin-top: 50px;
+}
+.header-block__background {
+	background: url("../../static/img/backs2/1st-bg.jpg");
+	background-attachment: fixed;
+	//background-origin: initial;
+	//background-clip: initial;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	position: relative;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    min-height: @header-block-min-height;
+    max-height: @header-block-max-height;
+    z-index: 0;
+}
+.header-block__logo {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+.header-block__logo-img {
+    max-width: 100px;
+    max-height: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url('../../static/img/header-block/logo2.png');
+    background-repeat: no-repeat;
+	background-position: 0 0;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &:hover {
+        background-image: url('../../static/img/header-block/logo1.png');
+    }
+}
+.header-block__logo-text {
+    position: absolute;
+    top: 0;
+    left: -99999px;
+}
+.header-block__phone {
+//    background-color: @header-block-text-background-color1;
+    color: @header-block-text-color;
+    text-align: center;
+    .opensans-condbold;
+    font-size: 28px;
+    z-index: 1;
+    &:hover {
+//        background-color: @header-block-text-background-color2;
+    }
+}
+.header-block__email {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    .opensans-condbold;
+    font-size: 14px;
+    z-index: 1;
+    color: @header-block-text-color;
+    a {
+        text-decoration: none;
+        color: @header-block-text-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.header-block__margintop-xs {
+    margin-top: 25px;
+}
+.header-block__marginbottom {
+    margin-bottom: 25px;
+}
+.header-block__marginbottom-xs {
+    margin-bottom: 10px;
+}
+.header-block__text-background {
+   z-index: 100;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    opacity:0.95;
+    filter:alpha(opacity=95);
+    -moz-opacity:0.95;
+    background-color: @header-block-text-background-color1;
+    height:100%;
+}
+.header-block__main-text {
+    color: @header-block-text-color;
+    text-align: center;
+    .opensans-condbold;
+    font-size: 28px;
+    z-index: 1;
+
+    h1 {
+        padding: 0;
+        margin: 0;
+    }
+}
+.h1-for-xtrasmall-monitors {
+    font-size: 30px;
+}
+
+/*
+@header-block-text-background-color1: #01518e;
+@header-block-text-background-color2: #54639e;
+*/
+.header-block__order-button {
+    /*
+    @width: 68px,              = ширина
+    @height: 28px,             = высота
+    @img: none,                = картинка иконки
+    @bradius: 3px,             = радиус уголков
+    @bg-color: #17709a,        = цвет фона
+    @hover-bg-color: #17709a,  = цвет фона при ховере
+    @font-color: #ffffff       = цвет шрифта
+    @font-size: 12px           = размер шрифта
+     */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    .opensans-condbold;
+    .original-button (
+        247px,
+        42px,
+        none,
+        none,
+        #01518e,
+        #54639e,
+        #d5dbe7,
+        18px
+    );
+}
+.header-block__info-button {
+    /*
+    @width: 68px,              = ширина
+    @height: 28px,             = высота
+    @img: none,                = картинка иконки
+    @bradius: 3px,             = радиус уголков
+    @bg-color: #17709a,        = цвет фона
+    @hover-bg-color: #17709a,  = цвет фона при ховере
+    @font-color: #ffffff       = цвет шрифта
+    @font-size: 12px           = размер шрифта
+     */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    .opensans-condbold;
+    .original-button (
+        247px,
+        42px,
+        none,
+        none,
+        #01518e,
+        #54639e,
+        #d5dbe7,
+        18px
+    );
+}
+/* -------= header-block =------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------= это все левые блоки перенести их в свои файлы =------- */
+
+
+
+
+
+
+
+.h1-white {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

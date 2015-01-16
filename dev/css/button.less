@@ -1,0 +1,168 @@
+//@import "fonts";
+/* Примесь для кнопки */
+/* яндекс кнопка */
+.button-original (@width: 80px, @height: 18px, @img: none) {
+    width: @width;
+    height: @height;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius:    6px;
+    border-radius: 6px;
+
+    line-height: @height;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    color: #000000;
+
+    background: -webkit-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%);
+    background: -moz-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%);
+    background: -o-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%);
+    background: -ms-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%);
+    background: linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    border: 1px solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    text-align: center;
+
+    background-image:
+        -webkit-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%),
+        -webkit-linear-gradient(#e5e5e5, #a8a8a8);
+    background-image:
+        -moz-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%),
+        -moz-linear-gradient(#e5e5e5, #a8a8a8);
+    background-image:
+        -o-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%),
+        -o-linear-gradient(#e5e5e5, #a8a8a8);
+    background-image:
+        -ms-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%),
+        -ms-linear-gradient(#e5e5e5, #a8a8a8);
+    background-image:
+        linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%),
+        linear-gradient(#e5e5e5, #a8a8a8);
+
+    .transition(0.2s);
+
+    &:before {
+        .button-font;
+        font-size: 16px;
+        content: @img;
+        width: 22px;
+        height: @height;
+        .inlineblock;
+     //   background: @img center center no-repeat;
+    }
+
+    &:hover {
+        background: -webkit-linear-gradient(90deg, #fdffcc 30%, #feffeb 70%);
+        background: -moz-linear-gradient(90deg, #fdffcc 30%, #feffeb 70%);
+        background: -o-linear-gradient(90deg, #fdffcc 30%, #feffeb 70%);
+        background: -ms-linear-gradient(90deg, #fdffcc 30%, #feffeb 70%);
+        background: linear-gradient(0deg, #fdffcc 30%, #feffeb 70%);
+
+        background-origin: padding-box, border-box;
+        background-clip: padding-box, border-box;
+        border: 1px solid transparent;
+
+        background-image:
+            -webkit-linear-gradient(90deg, #fdffcc 30%, #feffeb 70%),
+            -webkit-linear-gradient(#e5e5e5, #a8a8a8);
+        background-image:
+            -moz-linear-gradient(90deg, #fdffcc 30%, #feffeb 70%),
+            -moz-linear-gradient(#e5e5e5, #a8a8a8);
+        background-image:
+            -o-linear-gradient(90deg, #fdffcc 30%, #feffeb 70%),
+            -o-linear-gradient(#e5e5e5, #a8a8a8);
+        background-image:
+            -ms-linear-gradient(90deg, #fdffcc 30%, #feffeb 70%),
+            -ms-linear-gradient(#e5e5e5, #a8a8a8);
+        background-image:
+            linear-gradient(0deg, #fdffcc 30%, #feffeb 70%),
+            linear-gradient(#e5e5e5, #a8a8a8);
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+        text-shadow: 0 -1px #fff;
+
+        //Судя по виду из psd-макета нужно делать радиальный градиент, но project parfrait этого не видит
+        background: -webkit-linear-gradient(270deg,    #bababa 0%, #ebebeb 32%, #e2e2e2 100%);
+        background: -moz-linear-gradient(270deg,       #bababa 0%, #ebebeb 32%, #e2e2e2 100%);
+        background: -o-linear-gradient(270deg,         #bababa 0%, #ebebeb 32%, #e2e2e2 100%);
+        background: -ms-linear-gradient(270deg,        #bababa 0%, #ebebeb 32%, #e2e2e2 100%);
+        background: linear-gradient(180deg,            #bababa 0%, #ebebeb 32%, #e2e2e2 100%);
+    }
+    &:focus {
+
+        box-shadow: 0px 0px 4px 0.00px rgba(0, 35, 214, 0.94);
+
+    }
+
+}
+.button-original (@width, @height, @img) when (@img = none) {
+    &:before {
+        display: none;
+    }
+}
+/* Примесь для кнопки */
+
+/* -------= Примесь для кнопки =------- */
+/* anchor кнопка */
+.original-button (@width: 68px, @height: 28px, @img: none, @bradius: 3px, @bg-color: #17709a, @hover-bg-color: #17709a, @font-color: #ffffff, @font-size: 12px) {
+	width: @width;
+    height: @height;
+    text-align: center;
+    .border-radius(@bradius);
+    background-color: @bg-color;
+    .inlineblock;
+    padding: 0;
+    border: 0 none;
+    text-decoration: none;
+    .transition(0.2s);
+    line-height: @height;
+    color: @font-color;
+    font-size: @font-size;
+    //.ubuntu-b;
+
+    &:before {
+        content: "";
+        width: 25px;
+        height: @height;
+        .inlineblock;
+        background: @img center center no-repeat;
+    }
+
+    &:hover {
+        opacity: 0.9;
+        background-color: @hover-bg-color;
+        text-decoration: none;
+        color: @font-color;
+    }
+
+    &:visited {
+        color: @font-color; /* Цвет посещенных ссылок */
+        text-decoration: none !important;
+    }
+    &:active {
+        color: @font-color; /* Цвет активных ссылок */
+        text-decoration: none !important;
+    }
+    &:focus {
+        color: @font-color; /* Цвет активных ссылок */
+        text-decoration: none !important;
+        outline: none;
+    }
+}
+.original-button (@width, @height, @img, @bradius, @bg-color, @hover-bg-color, @font-color, @font-size) when (@img = none) {
+    &:before {
+        display: none;
+    }
+}
+/* -------= Примесь для кнопки =------- */
+
+
