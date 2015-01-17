@@ -1,24 +1,24 @@
 <?php
 
-    define("CONTACT_FORM", 'info@ip34.ru');
+define("CONTACT_FORM", 'taksenov@gmail.com');
 
-    // функция проверки введенного email клиентом
-    function ValidateEmail($value){
-        $regex = '/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i';
+// функция проверки введенного email клиентом
+function ValidateEmail($value){
+    $regex = '/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i';
 
-        if($value == '') {
-            return false;
-        } else {
-            $string = preg_replace($regex, '', $value);
-        }
-
-        return empty($string) ? true : false;
+    if($value == '') {
+        return false;
+    } else {
+        $string = preg_replace($regex, '', $value);
     }
-    //============================================
 
-    $post = (!empty($_POST)) ? true : false;
+    return empty($string) ? true : false;
+}
+//============================================
 
-    if($post){
+$post = (!empty($_POST)) ? true : false;
+
+if($post){
 
 
     $name = stripslashes($_POST['name']);
@@ -31,7 +31,7 @@
     $messageToClient = '
 	<html>
 		<head>
-			<titleЗаявка на создание интернет-магазина для малого бизнеса</title>
+			<title>Заявка на создание интернет-магазина для малого бизнеса</title>
 			<style>
 		     td, th{
 		      border: 1px solid #d4d4d4;
@@ -123,13 +123,13 @@
          $email,
          $subject, $messageToClient,
              "From:  Студия разработки сайтов -- ip34.ru <info@ip34.ru>\r\n"
-            ."Reply-To: ".$email."\r\n"
+            ."Reply-To: info@ip34.ru\r\n"
             ."Content-type: text/html; charset=utf-8 \r\n"
             ."X-Mailer: PHP/" . phpversion());
 
         //Отправка почты мне
         $mailToMe = mail(
-         'info@ip34.ru',
+         'taksenov@gmail.com',
          //$email,
          $subject,
          $messageToMe,
