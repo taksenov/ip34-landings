@@ -93,7 +93,7 @@
                         </div>
                         <div class="col-md-1 col-lg-1 hidden-xs hidden-sm"></div>
                     </div> <!-- отображение на всем кроме телефонов -->
-                    
+
                     <!-- отображение только на телефонах -->
                     <div class="row hidden-sm hidden-md hidden-lg header-block__marginbottom">
                         <div class="col-md-1 col-lg-1 hidden-xs hidden-sm"></div>
@@ -409,6 +409,17 @@
                                         Заказать интернет-магазин
                                     </h2>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+                                    <p>
+                                        Для того, чтобы наши менеджеры могли связаться с вами, просим вас заполнить ваши контактные данные.
+                                        Мы не занимаемся рассылкой спама и не собираем ваши данные в базах данных.
+                                    </p>
+                                    <p>
+                                        После заполнения заявки, нашим менеджерам прийдет письмо и мы свяжемся с вами.
+                                    </p>
+                                </div>
+
                                 <div class="form-group">
                                     <label for="inputFIO" class="col-sm-2 control-label">ФИО</label>
                                     <div class="col-sm-10">
@@ -428,6 +439,15 @@
                                     </div>
                                 </div>
 
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="personalDataCheck"> Я подтверждаю свое согласие
+                                            на обработку моих персональных данных
+                                        </label>
+                                    </div>
+                                </div>
+
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="valid">
 
                                 </div>
@@ -435,7 +455,7 @@
                                 <div class="form-group">
                                     <div class="col-sm-12 text-center feedback-block__submit-button">
                                         <!--<button type="submit" class="btn btn-default">Отправить заявку</button>-->
-                                        <a class="feedback-block__offer-button btn" href="#">
+                                        <a class="feedback-block__offer-button btn disabled" href="#" id="personalDataBtn">
                                             Отправить заявку
                                         </a>
                                     </div>
